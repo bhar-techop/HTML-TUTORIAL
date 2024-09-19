@@ -1,0 +1,206 @@
+
+<html>
+<head>
+    
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 3px solid black;
+        }
+        
+        td, th {
+            padding: 8px;
+        }
+
+        td {
+            height: 50px;
+            text-align: center;
+        }
+
+        /* Define specific heights for certain cells */
+        .box-a {
+            height: 100px;
+        }
+
+        .box-b {
+            height: 60px;
+        }
+
+        .box-c {
+            height: 120px;
+        }
+
+        .box-l {
+            height: 230px;
+        }
+
+        .items-table td, .items-table th {
+            text-align: center;
+        }
+
+        .footer td {
+            border: none;
+        }
+
+        .bold {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Align COMPANY NAME to the left */
+        .company-name {
+            text-align: left;
+        }
+
+        /* Empty row styling for bottom border */
+        .empty-border {
+            height: 50px; /* Adjust the height as needed */
+            border: 1px solid black;
+        }
+        
+        /* Bottom empty box */
+        .bottom-empty-box {
+    height: 140px;
+    border: 5px solid black;
+    width: 50%;
+}
+.b{
+    text-align: right;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td rowspan="3" class="box-a">A</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td class="box-b">B</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td class="box-c">C</td>
+            <td colspan="2" class="box-l">L</td>
+        </tr>
+    </table>
+
+    <table class="items-table">
+        <tr>
+            <th>SL</th>
+            <th>Items</th>
+            <th>Due Dt</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Per</th>
+            <th>Dis%</th>
+            <th>Amt</th>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    
+
+    </table>
+    
+
+
+
+    <table>
+        
+        <tr>
+            <td colspan="4" class="bold">AMT IN WORD</td>
+            <td colspan="4" class="b">E. & O. E.</td>
+        </tr>
+        <tr>
+            <td colspan="7" class="bold company-name">COMPANY NAME</td>
+            <td class="bottom-empty-box" colspan="7"></td>
+        </tr>
+    </table>
+
+  
+
+</body>
+</html>
+
